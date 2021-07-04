@@ -1,0 +1,16 @@
+<div class="formulario-post">
+
+  <form class="formulario-envio" (formGroup)="form">
+    <h2>Nova Postagem</h2>
+    <div>
+      <label for="title">Título da postagem</label>
+      <input type="text" name="title" placeholder="Titulo da postagem" formControlName="title">
+    </div>
+    <div>
+      <label for="body">Digite o texto da postagem</label>
+      <textarea rows="8" name="body" formControlName="body" value="body"></textarea>
+    </div>
+    <button type="submit" (click)="onSubmit()">Enviar</button>
+  </form>
+</div>
+

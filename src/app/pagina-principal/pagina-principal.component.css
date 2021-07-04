@@ -1,0 +1,151 @@
+.resultado-busca{
+  width: fit-content;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.resultado-busca h1{
+  font-size: 25px;
+  margin-bottom: 8px;
+}
+
+.resultado-busca p{
+  margin: 0;
+}
+
+.criacao{
+  padding: 10px;
+  text-align: center;
+}
+
+.criacao h3{
+  border: 2px solid rgba(104, 104, 104, 0.123);
+  width: 150px;
+  padding: 20px;
+}
+
+.conteudo-flex,
+section
+{
+  display: flex;
+  flex-direction: row;
+}
+
+section{
+  width: 840px;
+  flex-wrap:wrap;
+}
+
+.conteudo-cartao-noticias{
+  width: 400px;
+  overflow: hidden;
+  margin: 0 10px 20px;
+  border-radius: 5px;
+}
+
+.conteudo-cartao-noticias > img{
+  width: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.texto-cartao{
+  padding: 20px;
+  border: solid rgba(104, 104, 104, 0.123);
+  border-width: 0 2px 2px;
+
+}
+
+.texto-cartao h2{
+  margin: 0 0 15px;
+}
+
+.texto-cartao p{
+  margin: 15px 0 0;
+}
+
+.lista-categorias{
+  margin: 0;
+  padding: 0;
+}
+
+.lista-categorias > li{
+  list-style: none;
+  padding: 12px 0;
+  border-bottom: 2px solid rgba(104, 104, 104, 0.123);
+}
+
+aside{
+  margin: 0 20px;
+}
+
+aside h4{
+  margin: 0;
+}
+
+.busca-id{
+  margin: 30px 0 0;
+}
+
+.campo-busca{
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  border: 2px solid rgba(104, 104, 104, 0.123);
+  border-radius: 5px;
+  margin: 0;
+}
+
+.campo-busca{
+  margin: 8px 0;
+  height: 30px;
+  padding: none;
+}
+.campo-busca input{
+  margin-left: none;
+  border: none;
+}
+
+.campo-busca button{
+  background: none;
+  border: none;
+  padding: 0;
+}
+.campo-busca img{
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 750px){
+  .conteudo-flex{
+    flex-direction:column-reverse;
+  }
+  aside{
+    text-align: center;
+  }
+}
+
+
+@media (max-width: 1200px){
+  .criacao, .criacao h3{
+    width: 50%;
+  }
+  main{
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+  section{
+    margin: 0 auto;
+    width: 100%
+  }
+  aside{
+    margin: 0 auto;
+    width: 100%;
+
+  }
+  .campo-busca{
+    margin: 10px auto;
+    width: fit-content;
+  }
+}

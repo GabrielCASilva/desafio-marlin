@@ -1,0 +1,60 @@
+<header class="criacao">
+  <h3><a routerLink="/novo-post">Novo Post</a></h3>
+</header>
+
+<div class="resultado-busca">
+  <h1>Exibindo resultado de busca por "Covid 19"</h1>
+  <p>Encontramos um total de 20 resultados para sua busca</p>
+</div>
+
+
+
+<div class="conteudo-flex">
+
+  <main>
+    <section>
+      <div class="conteudo-cartao-noticias" *ngFor="let post of posts">
+        <img
+          src="https://diariodorio.com/wp-content/uploads/2020/08/naom_5e86e7aec5ff4.jpg"
+          alt="imagem da noticia"
+        />
+        <div class="texto-cartao">
+          <h2>{{post.title}}</h2>
+          <p>{{post.body.slice(0, 100)}}...</p>
+          <p><a routerLink="/post/{{post.id}}"><strong>Ler mais</strong></a></p>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <aside>
+    <nav class="categorias">
+      <h4>Categorias</h4>
+      <ul class="lista-categorias">
+        <li>Lorem ipsum dolor</li>
+        <li>Lorem ipsum dolor</li>
+        <li>Lorem ipsum dolor</li>
+        <li>Lorem ipsum dolor</li>
+      </ul>
+    </nav>
+
+    <form class="busca-id" (ngSubmit)="formulario()">
+      <h4>Procurando alguma notícia?</h4>
+      <div class="campo-busca">
+        <input
+          type="text"
+          placeholder="Pesquisar por..."
+          [(ngModel)]="valor"
+          name="valor"
+        />
+        <button type="submit">
+          <img src="https://img.icons8.com/fluent-systems-filled/48/AAAAAA/search.png"/>
+        </button>
+      </div>
+    </form>
+
+  </aside>
+</div>
+
+

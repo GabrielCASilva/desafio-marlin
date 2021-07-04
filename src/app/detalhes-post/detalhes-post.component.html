@@ -1,0 +1,10 @@
+<div *ngFor="let post of posts" class="detalhes-postagem">
+  <div *ngIf="post.id == dataId">
+    <h1>{{post.id}} - {{post.title}}</h1>
+    <img
+      src="https://diariodorio.com/wp-content/uploads/2020/08/naom_5e86e7aec5ff4.jpg"
+      alt="imagem da noticia"
+    />
+    <p>{{post.body}}</p>
+  </div>
+</div>

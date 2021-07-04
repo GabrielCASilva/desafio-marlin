@@ -1,0 +1,26 @@
+.detalhes-postagem{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.detalhes-postagem h1{
+  text-align: center;
+  margin: 50px auto 20px;
+}
+
+.detalhes-postagem img{
+  width: 100%;
+  object-fit: cover;
+  margin: 30px 0;
+}
+
+@media (max-width: 400px){
+  .detalhes-postagem h1{
+    width: 80%;
+  }
+  .detalhes-postagem p{
+    margin: 0 auto;
+    width: 80%;
+    text-justify: distribute;
+  }
+}
